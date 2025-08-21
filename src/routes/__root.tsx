@@ -1,10 +1,11 @@
 import { createRootRoute, HeadContent, Outlet } from '@tanstack/react-router';
 
-const title = 'Vite React Tailwind Starter';
-const description = 'app starter template';
-const url = 'https://vite-react-tailwind-starter.sznm.dev';
-const ogImgUrl =
-  'https://og.sznm.dev/api/generate?heading=vite-react-tailwind-starter&text=React+vite+template+with+TailwindCSS+and+TypeScript+setup.&template=color';
+const title = 'Algorithm Visualizer - Interactive Sorting Algorithms';
+const description = 'Interactive sorting algorithm visualizer with animations and audio feedback. Learn bubble sort, quick sort, merge sort, and more with beautiful visual demonstrations.';
+const url = 'https://algo-visu.vercel.app';
+const ogImgUrl = 'https://algo-visu.vercel.app/og-image.png';
+const author = 'highintoxic';
+const keywords = 'sorting algorithms, algorithm visualizer, computer science, education, bubble sort, quick sort, merge sort, data structures, programming, animations';
 
 export const Route = createRootRoute({
   head: () => ({
@@ -15,6 +16,18 @@ export const Route = createRootRoute({
       {
         name: 'description',
         content: description,
+      },
+      {
+        name: 'keywords',
+        content: keywords,
+      },
+      {
+        name: 'author',
+        content: author,
+      },
+      {
+        name: 'robots',
+        content: 'index, follow',
       },
       {
         name: 'viewport',
@@ -46,7 +59,23 @@ export const Route = createRootRoute({
       },
       {
         name: 'theme-color',
-        content: '#000000',
+        content: '#1976d2',
+      },
+      {
+        name: 'color-scheme',
+        content: 'light dark',
+      },
+      {
+        name: 'application-category',
+        content: 'Education',
+      },
+      {
+        name: 'subject',
+        content: 'Computer Science, Algorithms, Data Structures',
+      },
+      {
+        name: 'rating',
+        content: 'General',
       },
       {
         name: 'og:type',
@@ -91,17 +120,74 @@ export const Route = createRootRoute({
     ],
     links: [
       {
+        rel: 'canonical',
+        href: url,
+      },
+      {
         rel: 'icon',
         href: '/favicon.ico',
+        sizes: 'any',
+      },
+      {
+        rel: 'icon',
+        href: '/pwa-64x64.png',
+        sizes: '64x64',
+        type: 'image/png',
+      },
+      {
+        rel: 'icon',
+        href: '/pwa-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
       },
       {
         rel: 'apple-touch-icon',
         href: '/apple-touch-icon-180x180.png',
+        sizes: '180x180',
       },
       {
         rel: 'manifest',
-        href: '/manifest.webmanifest',
+        href: '/site.webmanifest',
       },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: 'anonymous',
+      },
+    ],
+    scripts: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Algorithm Visualizer",
+          "description": description,
+          "url": url,
+          "author": {
+            "@type": "Person",
+            "name": author
+          },
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "educationalLevel": ["High School", "University", "Adult Education"],
+          "teaches": ["Sorting Algorithms", "Data Structures", "Computer Science"],
+          "interactionStatistic": {
+            "@type": "InteractionCounter",
+            "interactionType": "https://schema.org/PlayAction",
+            "userInteractionCount": 0
+          }
+        })
+      }
     ],
   }),
   component: () => (

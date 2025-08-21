@@ -1,52 +1,137 @@
-<img src="https://og.sznm.dev/api/generate?heading=vite-react-tailwind-starter&text=React+vite+template+with+TailwindCSS+and+TypeScript+setup.&template=color&center=true&height=330" />
+# 🔢 Algorithm Visualizer
 
-This is a project bootstrapped with [`@vitejs/app`](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) (`react-ts`), added with [TailwindCSS](https://tailwindcss.com) and [TypeScript](https://www.typescriptlang.org) setup.
+An interactive web application that visualizes sorting algorithms with beautiful animations and audio feedback. Watch and listen to algorithms like Bubble Sort, Quick Sort, Merge Sort, and more as they sort data in real-time.
 
-- ⚡ blazing fast dev server and build
-- 🔗 route management added (`TanStack Router` - File Based routing)
+![Algorithm Visualizer Demo](https://img.shields.io/badge/Demo-Live-brightgreen?style=for-the-badge)
 
-[**Live Demo**](https://vite-react-tailwind-starter.sznm.dev/)
+## ✨ Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/agustinusnathaniel/vite-react-tailwind-starter) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/agustinusnathaniel/vite-react-tailwind-starter)
+### 🎬 **Visual Animations**
+- **Smooth bar animations** with CSS transitions
+- **Real-time sorting visualization** showing comparisons, swaps, and sorted elements
+- **Color-coded feedback** for different operations
+- **Responsive design** that works on all screen sizes
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/agustinusnathaniel/vite-react-tailwind-starter)
+### 🎵 **Audio Feedback** 
+- **Multiple sound types**: Sine, Square, Sawtooth, Triangle waves
+- **Frequency mapping** - higher values produce higher pitches
+- **Silent mode** option for quiet environments
+- **Audio context management** for optimal performance
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sozonome_vite-react-tailwind-starter&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=sozonome_vite-react-tailwind-starter) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=sozonome_vite-react-tailwind-starter&metric=bugs)](https://sonarcloud.io/summary/new_code?id=sozonome_vite-react-tailwind-starter) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=sozonome_vite-react-tailwind-starter&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=sozonome_vite-react-tailwind-starter) [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=sozonome_vite-react-tailwind-starter&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=sozonome_vite-react-tailwind-starter) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=sozonome_vite-react-tailwind-starter&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=sozonome_vite-react-tailwind-starter) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=sozonome_vite-react-tailwind-starter&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=sozonome_vite-react-tailwind-starter) [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=sozonome_vite-react-tailwind-starter&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=sozonome_vite-react-tailwind-starter) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=sozonome_vite-react-tailwind-starter&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=sozonome_vite-react-tailwind-starter) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=sozonome_vite-react-tailwind-starter&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=sozonome_vite-react-tailwind-starter)
+### 🧮 **Supported Algorithms**
+- **Bubble Sort** - Simple comparison-based sorting
+- **Selection Sort** - Find minimum and swap
+- **Insertion Sort** - Build sorted array one element at a time
+- **Merge Sort** - Divide and conquer approach
+- **Quick Sort** - Efficient pivot-based sorting
+- **Heap Sort** - Binary heap-based sorting
+- **Radix Sort** - Non-comparative integer sorting
+- **Pancake Sort** - Flip-based sorting algorithm
+- **Stooge Sort** - Recursive divide-and-conquer
 
-## Getting Started
+### ⚙️ **Customization Options**
+- **Array size control** (10-250 elements)
+- **Speed adjustment** (1-1000 speed levels)
+- **Data distributions**: Random, Nearly Sorted, Reversed, Few Unique values
+- **Dark/Light theme** support
+- **Real-time algorithm explanations**
 
-You can either click [`Use this template`](https://github.com/agustinusnathaniel/vite-react-tailwind-starter/generate) button on this repository and clone the repo or use npx degit like so:
+## 🚀 Getting Started
 
+### Prerequisites
+- Node.js (v22.16.x or higher)
+- PNPM package manager
+
+### Installation
+
+1. **Clone the repository**
 ```bash
-npx degit agustinusnathaniel/vite-react-tailwind-starter <app_name>
+git clone https://github.com/highintoxic/algo-visu.git
+cd algo-visu
 ```
 
-```
-pnpm i
+2. **Install dependencies**
+```bash
+pnpm install
 ```
 
-Then, run the development server:
-
+3. **Start the development server**
 ```bash
 pnpm dev
 ```
 
-## Deployment
+4. **Open your browser**
+Navigate to `http://localhost:3000` to see the application.
 
-- build command: `pnpm build`
-- output directory: `dist`
+## 🛠️ Built With
 
-### Vercel
+- **⚡ Vite** - Next generation frontend tooling
+- **⚛️ React 18** - Modern React with hooks and concurrent features
+- **🎨 Material-UI** - React component library for beautiful UI
+- **🎵 Tone.js** - Web Audio framework for interactive audio
+- **📱 TypeScript** - Type-safe JavaScript development
+- **🎯 TanStack Router** - Type-safe router for React
 
-- https://vercel.com/docs/frameworks/vite
+## 📱 Usage
 
-### Netlify
+1. **Select an Algorithm** - Choose from 9 different sorting algorithms
+2. **Customize Settings**:
+   - Adjust array size (10-250 elements)
+   - Set animation speed (1-1000)
+   - Choose sound type or select "None" for silent mode
+   - Pick data distribution pattern
+3. **Generate Array** - Create a new random array to sort
+4. **Start Sorting** - Watch the algorithm work with smooth animations
+5. **Learn** - Read the algorithm explanations to understand how each one works
 
-- https://docs.netlify.com/frameworks/vite/
+## 🎯 Educational Value
 
-## References
+This visualizer is perfect for:
+- **Students** learning about algorithms and data structures
+- **Teachers** demonstrating sorting concepts in classrooms
+- **Developers** refreshing their knowledge of classic algorithms
+- **Anyone curious** about how computers sort data
 
-- [vite](https://vitejs.dev)
-  - [avoid manual import](https://vitejs.dev/guide/features.html#jsx)
-- [TailwindCSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org)
+## 🔧 Development
+
+### Available Scripts
+
+```bash
+# Development
+pnpm dev          # Start dev server
+pnpm build        # Build for production
+pnpm preview      # Preview production build
+pnpm test         # Run tests
+pnpm type:check   # TypeScript type checking
+```
+
+### Project Structure
+
+```
+src/
+├── lib/
+│   ├── components/     # Reusable UI components
+│   ├── pages/         # Page components
+│   ├── utils/         # Utility functions (algorithms, sound)
+│   └── styles/        # Global styles
+├── routes/            # TanStack Router routes
+└── main.tsx          # Application entry point
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Inspired by visualgo.net and other algorithm visualization tools
+- Sound implementation inspired by web audio programming concepts
+- UI design principles from Material Design guidelines
+
+---
+
+**Made with ❤️ by [highintoxic](https://github.com/highintoxic)**

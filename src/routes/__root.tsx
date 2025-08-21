@@ -1,7 +1,4 @@
 import { createRootRoute, HeadContent, Outlet } from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
-
-import { Layout } from '@/lib/layout';
 
 const title = 'Vite React Tailwind Starter';
 const description = 'app starter template';
@@ -110,10 +107,7 @@ export const Route = createRootRoute({
   component: () => (
     <>
       <HeadContent />
-      <Layout>
-        <Outlet />
-      </Layout>
-      <TanStackRouterDevtools position="bottom-right" />
+      <Outlet />
     </>
   ),
 });

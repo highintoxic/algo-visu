@@ -16,7 +16,7 @@ const Page404 = () => {
         <div className="grid gap-2">
           <p>It&apos;s Okay!</p>
           <div>
-            <Link to="/">Let&apos;s Head Back</Link>
+            <Link to=".">Let&apos;s Head Back</Link>
           </div>
         </div>
       </div>

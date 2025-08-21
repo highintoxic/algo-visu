@@ -1,7 +1,6 @@
-import { createFileRoute } from '@tanstack/react-router';
-
-import Home from '@/lib/pages/home';
+import { createFileRoute } from '@tanstack/react-router'
+import { SortingVisualizer } from '@/lib/pages/SortingVisualizer';
 
 export const Route = createFileRoute('/')({
-  component: Home,
-});
+  component: SortingVisualizer
+})
